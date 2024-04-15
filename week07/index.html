@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding information</title>
+    <style>
+    
+      .grid-container {
+        display: grid;
+        grid: 150px / auto auto auto;
+        margin: 3em;
+        display: block;
+      }
+      fieldset {
+        background-color: white;
+        border-radius: 0.5cap;
+        border-color: white;
+      }
+      body {
+        background-color: rgba(236, 202, 236, 0.842);
+      }
+      fieldset span {
+        color: red;
+        font-size: 0.7em;
+      }
+      input {
+        border-top: white;
+        border-right: white;
+        border-left: white;
+        border-color: rgba(185, 172, 172, 0.504);
+      }
+      h2 span {
+        color: gray;
+      }
+      .delete {
+        border-color: rgba(236, 202, 236, 0.842);
+        border-bottom: rgba(236, 202, 236, 0.842);
+        border-right: rgba(236, 202, 236, 0.842);
+        background-color: rgba(236, 202, 236, 0.842);
+        color: blue;
+      }
+      .submit {
+        background-color: purple;
+        color: white;
+        font-size: 1.3em;
+        border-radius: 0.5cap;
+        border-color: rgba(236, 202, 236, 0.842);
+        border-bottom: rgba(236, 202, 236, 0.842);
+        border-right: rgba(236, 202, 236, 0.842);
+      }
+      .top {
+        border-top-color: purple;
+        border-top-width: 1em;
+      }
+      form {
+        margin-top: 2em;
+      }
+      form div {
+        margin-top: 0.8em;
+      }
+      .radio {
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    <form action="index.html" method="post">
+
+        <span style="font-size: 2em;"><strong> Google Form</strong></span>
+        <span style="font-size: 0.8em;">(직접 만들어보기..)</span>
+        
+        <div>
+            <fieldset class="top">
+              <h2>w05 Review</h2>
+              <p style="font-size: 0.9em;"> 오늘 수업 내용을 되돌아보고, 아래 질문에 솔직히 답변해 주세요.</p>
+              <hr>
+              <label>email: </label>
+              <input type="text" class="text" id="predialog_email" placeholder="example@naver.com" name="email" style="width: 80%;"/>
+              <br>
+              <span>-email 비공개-</span>
+              <hr>
+              <span>* 표시는 필수임</span>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <h4>이름 <span>*</span></h4>
+                <input type="text" class="text" id="predialog_email" placeholder="내 답변" name="email" style="width: 80%;"/>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <h4>학번 <span>*</span></h4>
+                <input type="text" class="text" id="predialog_email" placeholder="내 답변" name="email" style="width: 80%;"/>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <h4>오늘 수업에서 기억에 남는 것을 한 가지 이상 작성해 주세요. <span>*</span></h4>
+                <input type="text" class="text" id="predialog_email" placeholder="내 답변" name="email" style="width: 80%;"/>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <h4>오늘 수업은 얼마나 만족하나요? <span>*</span></h4>
+                    <div class="radio">
+                    전혀 만족하지 않는다    
+                    <div>
+                        1.<input type="radio">
+                    </div>
+                    <div>
+                        2.<input type="radio">
+                    </div>
+                    <div>
+                        3.<input type="radio">
+                    </div>
+                    <div>
+                        4.<input type="radio">
+                    </div>
+                    <div>
+                        5.<input type="radio">
+                    </div>
+                    매우 만족한다
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <h4>오늘 수업에서 아쉬웠던 또는 어려웠던 점을 한 가지 이상 작성해 주세요. <span>*</span></h4>
+                <input type="text" class="text" id="predialog_email" placeholder="내 답변" name="email" style="width: 80%;"/>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <h4>오늘 수업은 얼마나 어려웠나요? <span>*</span></h4>
+                    <div class="radio">
+                    전혀 만족하지 않는다    
+                    <div>
+                        1.<input type="radio">
+                    </div>
+                    <div>
+                        2.<input type="radio">
+                    </div>
+                    <div>
+                        3.<input type="radio">
+                    </div>
+                    <div>
+                        4.<input type="radio">
+                    </div>
+                    <div>
+                        5.<input type="radio">
+                    </div>
+                    매우 만족한다
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <h4>오늘 수업에서 질문할 것이 있다면 작성해 주세요.</h4>
+                <input type="text" class="text" id="predialog_email" placeholder="내 답변" name="email" style="width: 80%;"/>
+            </fieldset>
+        </div>
+
+        <div>
+            <button class="submit" type="submit"><span>제출</span></button>
+            <button class="delete" type="button" style="float: right;">양식 지우기</button>
+        </div>
+
+        <div style="text-align: center;">
+            Google Forms를 통해 비밀번호를 제출하지 마세요.<br>
+            이 콘텐츠는 Google이 만들거나 승인하지 않았습니다.<br> 
+            <u>악용사례 신고</u> - <u>서비스 약관</u> - <u>개인정보처리방침</u>
+            <h2>Google <span>설문지</span></h2>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
