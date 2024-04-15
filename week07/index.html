@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coding information</title>
     <style>
-    
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
       .grid-container {
         display: grid;
         grid: 150px / auto auto auto;
@@ -18,7 +21,7 @@
         border-color: white;
       }
       body {
-        background-color: rgba(236, 202, 236, 0.842);
+        
       }
       fieldset span {
         color: red;
@@ -65,8 +68,29 @@
     </style>
 </head>
 <body>
+    <div style="background-color: gray;">
+        week 07  - Create a Responsive Web Pages 
+
+        <br>
+        <span style="font-size: 0.8em;">
+        파일 수정 보기 도구 도움말
+    </span>
+        <br>
+        ✯⏅﹗☁️
+        <br>
+    </div>
+    <div id="grid">
+
+    <div style="background-color: gray; margin-top: 5em;">
+        <ol>
+            <li><a href="/week07/index.html">HTML</a></li>
+            <li><a href="/week07/index.html">CSS</a></li>
+            <li><a href="/week07/index.html">JavaScript</a></li>
+        </ol>
+      </div>
+
     <div class="grid-container">
-    <form action="index.html" method="post">
+    <form action="index.html" method="post" style="background-color: gray;">
 
         <span style="font-size: 2em;"><strong> Google Form</strong></span>
         <span style="font-size: 0.8em;">(직접 만들어보기..)</span>
@@ -182,6 +206,7 @@
             <h2>Google <span>설문지</span></h2>
         </div>
     </form>
+    </div>
     </div>
 </body>
 </html>
