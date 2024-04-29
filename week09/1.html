@@ -1,0 +1,63 @@
+<!DOCTYPE html>``
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+          width: 100px;
+          height: 100px;
+          border: 1px solid black;
+          margin: 10px;
+          float: left;
+          padding: 30px;
+          text-align: center;
+          background-color: lightgray;
+        }
+        p {
+          background-color: white;
+        }
+      </style>
+    
+</head>
+<body onload="myFunction()">
+    <div onmouseover="myOverFunction()">
+        <p> onmouseover: <br>
+          <span id="demo"> Mouse over me! </span>
+        </p>
+      </div>
+    
+    <input type="text" onchange="alert('changed')" />
+    <h1>Hello World!</h1>
+  
+    <input type="text" onkeydown="myFunction2()">
+    <p>1+1</p>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="code.png" alt="Smiley" width="500" height="500">
+
+  <script>
+    var z = 0;
+    function myOverFunction() {
+      document.getElementById("demo").innerHTML = z += 1;
+    }
+
+     function myFunction() {
+      alert("Page is loaded");
+    }
+
+    function myFunction2() {
+      alert("You pressed a key inside the input field");
+    }
+    function bigImg(x) {
+      x.style.height = "500px";
+      x.style.width = "500px";
+    }
+    function normalImg(x) {
+      x.style.height = "32px";
+      x.style.width = "32px";
+    }
+    document.write(1+2+3+4+5+6+7+8+9+10);
+    </script>
+    <input type="button" value="hello" onclick="alert('hello js')">
+</body>
+</html>
