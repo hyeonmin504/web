@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+  
+  <h1>프론트</h1>
+  <input id="night_day" type="button" value="night" onclick="
+  var target = document.querySelector('body');
+
+  if(this.value == 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while (i < alist.length) {
+      alist[i].style.color = 'powderblue';
+      i = i + 1;
+    }    
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while (i < alist.length) {
+      alist[i].style.color = 'blue';
+      i = i + 1;
+    }  
+  }  
+  ">  
+  <h3>언어 종류</h3>
+  <ul>
+    <script>
+      const language = ['css', 'html', 'js','web']
+      const langImg = ['https://cdn.glitch.global/d2b20340-13b3-4f3d-9b16-7075ac92267f/css.png?v=1715576578682','https://cdn.glitch.global/d2b20340-13b3-4f3d-9b16-7075ac92267f/1.png?v=1715575997018','https://cdn.glitch.global/d2b20340-13b3-4f3d-9b16-7075ac92267f/3.png?v=1715576100031','https://cdn.glitch.global/d2b20340-13b3-4f3d-9b16-7075ac92267f/4.png?v=1715576113989']
+      
+      var i = 0;
+      while (i < language.length) {
+        document.write('<li>' + language[i] + '</li>');
+        document.write('<img src=' + langImg[i] + '>')
+        i = i + 1;
+      }
+    </script>
+  </ul>   
+    
+</body>
+</html>
